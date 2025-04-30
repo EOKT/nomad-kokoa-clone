@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.dots {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.dot:nth-child(1) {
+    animation: dotRotateLeft 2s infinite linear;
+}
+
+
+.dot:nth-child(3) {
+    animation: dotRotateRight 2s infinite linear;
+}
+
+
+@keyframes dotRotateLeft {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translate(-20px) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translate(-20px) rotate(-360deg);
+    }
+}
+
+@keyframes dotRotateRight {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translate(20px) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translate(20px) rotate(-360deg);
+    }
+}
+
+
+
+.bars {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    top: 60%;
+}
+
+.bar {
+    width: 5px;
+    height: 20px;
+    background-color: white;
+    animation: barWave 1.5s infinite ease-in-out;
+}
+
+.bar:nth-child(1) {
+    animation-delay: 0s;
+}
+.bar:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.bar:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.bar:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.bar:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.bar:nth-child(6) {
+    animation-delay: 0.5s;
+}
+.bar:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+@keyframes barWave {
+    0%, 100% {
+        height: 20px;
+    }
+    50% {
+        height: 40px;
+    }
+}

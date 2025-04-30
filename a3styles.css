@@ -1,0 +1,58 @@
+body {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.color-card {
+    background-color: white;
+}
+
+.color-stripe {
+    height: 10px;
+}
+
+.color-info {
+    padding: 10px;
+}
+
+.color-swatch {
+    height: 100px;
+}
+
+/* Specific colors */
+.tomato-stripe, .tomato-swatch {
+    background-color: #FF6347;
+}
+
+.teal-stripe, .teal-swatch {
+    background-color: #008080;
+}
+
+.burly-stripe, .burly-swatch {
+    background-color: #DEB887;
+}
+
+.thistle-stripe, .thistle-swatch {
+    background-color: #D7BFD7;
+}
