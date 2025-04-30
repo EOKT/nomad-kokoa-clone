@@ -16,6 +16,7 @@ body {
 
 .header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -34,7 +35,7 @@ body {
 .album-cover {
     width: 80px;
     height: 80px;
-    background-color: #FFB800;
+    background-color: pink;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -43,14 +44,14 @@ body {
 }
 
 .album-details h2 {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .album-details p {
-    font-size: 14px;
-    color: #555;
+    font-size: 15px;
+    color: black;
 }
 
 .controls {
@@ -61,7 +62,7 @@ body {
 
 .play-btn {
     background-color: white;
-    border: 2px solid #ddd;
+    border: 2px solid black;
     border-radius: 30px;
     padding: 10px 40px;
     display: flex;
@@ -72,11 +73,11 @@ body {
 
 
 .round-btn {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    border: 2px solid #ddd;
     background-color: white;
+    border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Playlist UI</title>
-    <link rel="stylesheet" href="a5styles.css"
-</head>
-<body>
-    <div class="playlist-container">
-        <div class="header">
-            <div class="playlist-title">Playlist</div>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Playlist UI</title>
+        <link rel="stylesheet" href="a5styles.css"
+    </head>
+
+    <body>
+        <div class="playlist-container">
+            <div class="header">
+                <i class="fa-solid fa-xmark"></i>
+                <div class="playlist-title">Playlist
+                </div>
+            </div>
         
-        <div class="album-info">
-            <div class="album-cover">
+            <div class="album-info">
+                <div class="album-cover">
+                </div>
+                <div class="album-details">
+                    <h2>Random Love</h2>
+                    <p>by Divay Kapoor</p>
+                </div>
             </div>
-            <div class="album-details">
-                <h2>Random Love</h2>
-                <p>by Divay Kapoor</p>
+
+            <div class="controls">
+                <button class="play-btn">
+                <i class="fa-solid fa-play"></i>
+                    Play
+                </button>
+                <div class="round-btn">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="round-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+
+            <div class="song-list">
+                <div class="song-item">
+                    <div class="song-color orange"></div>
+                    <div class="song-details">
+                        <h3>Matargasti</h3>
+                        <p>Mohit Chauhan</p>
+                    </div>
+                </div>
+
+                <div class="song-item">
+                    <div class="song-color pink"></div>
+                    <div class="song-details">
+                        <h3>Attitude</h3>
+                        <p>Lewis OfMan - Attitude</p>
+                    </div>
+                </div>
+
+                <div class="song-item">
+                    <div class="song-color blue"></div>
+                    <div class="song-details">
+                        <h3>Try Everthing</h3>
+                        <p>Shakira - Zootopia</p>
+                    </div>
+                </div>
+
+                <div class="song-item">
+                    <div class="song-color green"></div>
+                    <div class="song-details">
+                        <h3>Sunflower</h3>
+                        <p>Joseph Vincent - Sunflower</p>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="controls">
-            <button class="play-btn">
-                Play
-            </button>
-            <div class="round-btn">
-            </div>
-            <div class="round-btn">
-            </div>
-        </div>
-
-        <div class="song-list">
-            <div class="song-item">
-                <div class="song-color orange"></div>
-                <div class="song-details">
-                    <h3>Matargasti</h3>
-                    <p>Mohit Chauhan</p>
-                </div>
-            </div>
-
-            <div class="song-item">
-                <div class="song-color pink"></div>
-                <div class="song-details">
-                    <h3>Attitude</h3>
-                    <p>Lewis OfMan · Attitude</p>
-                </div>
-            </div>
-
-            <div class="song-item">
-                <div class="song-color blue"></div>
-                <div class="song-details">
-                    <h3>Try Everthing</h3>
-                    <p>Shakira · Zootopia</p>
-                </div>
-            </div>
-
-            <div class="song-item">
-                <div class="song-color green"></div>
-                <div class="song-details">
-                    <h3>Sunflower</h3>
-                    <p>Joseph Vincent · Sunflower</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+        <script src="https://kit.fontawesome.com/074639c40c.js" crossorigin="anonymous"></script>
+    </body>
 </html>
